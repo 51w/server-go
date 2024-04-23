@@ -3,6 +3,8 @@ package global
 import (
 	"sync"
 
+	"github.com/songzhibin97/gkit/cache/local_cache"
+
 	"go.uber.org/zap"
 
 	"github.com/51w/server-go/server/config"
@@ -19,5 +21,6 @@ var (
 	GVA_VP     *viper.Viper
 	GVA_LOG    *zap.Logger
 
+	BlackCache local_cache.Cache
 	lock       sync.RWMutex
 )
