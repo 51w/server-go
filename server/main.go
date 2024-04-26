@@ -20,9 +20,9 @@ func main() {
 	zap.ReplaceGlobals(global.GVA_LOG)
 	global.GVA_DB = initialize.Gorm() // gorm连接数据库
 	// initialize.Timer()
-	// initialize.DBList()
+	initialize.DBList()
 	if global.GVA_DB != nil {
-		// initialize.RegisterTables() // 初始化表
+		initialize.RegisterTables() // 初始化表
 		// 程序结束前关闭数据库链接
 		db, _ := global.GVA_DB.DB()
 		defer db.Close()

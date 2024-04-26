@@ -1,0 +1,4 @@
+[github.com/flipped-aurora/gin-vue-admin/server]2024/04/26 - 23:22:46.431	[34minfo[0m	D:/GO/server-go/server/initialize/router.go:82	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2024/04/26 - 23:22:46.456	[34minfo[0m	D:/GO/server-go/server/core/server.go:41	server run success on 	{"address": ":8888"}
+[github.com/flipped-aurora/gin-vue-admin/server]2024/04/26 - 23:23:22.479	[34minfo[0m	D:/GO/server-go/server/initialize/router.go:82	router register success
+[github.com/flipped-aurora/gin-vue-admin/server]2024/04/26 - 23:23:22.496	[34minfo[0m	D:/GO/server-go/server/core/server.go:41	server run success on 	{"address": ":8888"}
