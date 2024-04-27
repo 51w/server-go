@@ -21,24 +21,31 @@ func Gorm() *gorm.DB {
 	}
 }
 
+type User struct {
+    ID       uint   `gorm:"primaryKey"`
+    Name     string `gorm:"size:255"`
+}
+
 func RegisterTables() {
 	db := global.GVA_DB
+	db.Table("Test_User").AutoMigrate(&User{001, "wang"})
+
 	err := db.AutoMigrate(
 
 		system.SysApi{},
-		system.SysUser{},
-		system.SysBaseMenu{},
-		system.JwtBlacklist{},
-		system.SysAuthority{},
-		system.SysDictionary{},
-		system.SysOperationRecord{},
-		system.SysAutoCodeHistory{},
-		system.SysDictionaryDetail{},
-		system.SysBaseMenuParameter{},
-		system.SysBaseMenuBtn{},
-		system.SysAuthorityBtn{},
-		system.SysAutoCode{},
-		system.SysExportTemplate{},
+		// system.SysUser{},
+		// system.SysBaseMenu{},
+		// system.JwtBlacklist{},
+		// system.SysAuthority{},
+		// system.SysDictionary{},
+		// system.SysOperationRecord{},
+		// system.SysAutoCodeHistory{},
+		// system.SysDictionaryDetail{},
+		// system.SysBaseMenuParameter{},
+		// system.SysBaseMenuBtn{},
+		// system.SysAuthorityBtn{},
+		// system.SysAutoCode{},
+		// system.SysExportTemplate{},
 
 	)
 	if err != nil {
