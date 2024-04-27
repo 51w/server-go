@@ -8,6 +8,8 @@ require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/glebarez/sqlite v1.8.0
 	github.com/go-sql-driver/mysql v1.7.1
+	github.com/gofrs/uuid/v5 v5.1.0
+	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/songzhibin97/gkit v1.2.11
 	github.com/spf13/viper v1.16.0
 	go.uber.org/zap v1.24.0

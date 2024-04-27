@@ -4,6 +4,7 @@ import (
 	"os"
 
 	"github.com/51w/server-go/server/global"
+	"github.com/51w/server-go/server/model/system"
 
 	"go.uber.org/zap"
 	"gorm.io/gorm"
@@ -23,6 +24,21 @@ func Gorm() *gorm.DB {
 func RegisterTables() {
 	db := global.GVA_DB
 	err := db.AutoMigrate(
+
+		system.SysApi{},
+		system.SysUser{},
+		system.SysBaseMenu{},
+		system.JwtBlacklist{},
+		system.SysAuthority{},
+		system.SysDictionary{},
+		system.SysOperationRecord{},
+		system.SysAutoCodeHistory{},
+		system.SysDictionaryDetail{},
+		system.SysBaseMenuParameter{},
+		system.SysBaseMenuBtn{},
+		system.SysAuthorityBtn{},
+		system.SysAutoCode{},
+		system.SysExportTemplate{},
 
 	)
 	if err != nil {
