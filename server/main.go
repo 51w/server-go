@@ -2,6 +2,7 @@ package main
 
 import (
 	"go.uber.org/zap"
+	"fmt"
 
 	"github.com/51w/server-go/server/core"
 	"github.com/51w/server-go/server/global"
@@ -26,6 +27,9 @@ func main() {
 		// 程序结束前关闭数据库链接
 		db, _ := global.GVA_DB.DB()
 		defer db.Close()
+	} else {
+		// global.GVA_LOG.Info("global.GVA_DB is nil!")
+		fmt.Println("global.GVA_DB is nil!")
 	}
 	core.RunWindowsServer()
 }
