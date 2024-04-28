@@ -1,6 +1,9 @@
 =====================================================================
 Windows使用管理员进入CMD
 =====================================================================
+https://downloads.mysql.com/archives/community/
+
+
 D:\BaiduNetdiskDownload\mysql-5.7.44-winx64>
 D:\BaiduNetdiskDownload\mysql-5.7.44-winx64>.\bin\mysqld.exe install
 Service successfully installed.
